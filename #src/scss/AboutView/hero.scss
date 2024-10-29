@@ -1,0 +1,62 @@
+.about-hero {
+   .service-hero {
+      &__wrapper {
+         background-color: $brandBlue;
+      }
+
+      &__images {
+         padding: 0 24px;
+         height: 94px;
+      }
+
+      &__image {
+         display: flex;
+         gap: 20px;
+         height: 100%;
+
+         svg {
+            width: unset;
+         }
+      }
+
+      @media(max-width: 992px) {
+         &__images {
+            padding: 0 16px;
+            height: 56px;
+         }
+      }
+
+      @media(max-width: 768px) {
+         &__images {}
+      }
+
+      @media(max-width: 450px) {
+         &__images {
+            height: 88px;
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+         }
+
+         &__image {
+            &:nth-child(2) {
+               grid-column: span 2;
+            }
+
+            &:first-child {
+               svg {
+                  &:last-child {
+                     display: none;
+                  }
+               }
+            }
+         }
+      }
+
+      @media(max-width: 450px) {
+         &__image {
+            width: unset;
+         }
+      }
+   }
+}

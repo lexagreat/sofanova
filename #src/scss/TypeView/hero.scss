@@ -1,0 +1,202 @@
+.type-hero {
+   .service-hero {
+      &__wrapper {
+         background-color: $brandBlue;
+      }
+
+      &__images {
+         padding-right: 40px;
+         height: 120px;
+      }
+
+      &__image {
+         display: flex;
+         gap: 20px;
+
+         &:first-child {
+            transform: translateX(-30%);
+
+            svg {
+               &:nth-child(1) {
+                  flex: 0 0 244px;
+               }
+            }
+         }
+
+         &:last-child {
+            transform: translateX(30%);
+
+            svg {
+               &:first-child {
+                  flex: 0 0 62px;
+               }
+            }
+         }
+      }
+
+      @media(max-width: 1440px) {
+         &__images {
+            height: calc(72px + 68 * ((100vw - 768px) / (1440 - 768)));
+         }
+
+         &__image {
+
+            &:first-child {
+               svg {
+                  &:nth-child(1) {
+                     flex: 0 0 calc(144px + 137 * ((100vw - 768px) / (1440 - 768)));
+                  }
+               }
+            }
+
+            &:last-child {
+               transform: translateX(30%);
+
+               svg {
+                  &:first-child {
+                     flex: 0 0 calc(38px + 38 * ((100vw - 768px) / (1440 - 768)));
+                  }
+               }
+            }
+         }
+      }
+
+      @media(max-width: 768px) {
+         &__images {
+            height: 72px;
+            padding-right: 17px;
+         }
+
+         &__image {
+            gap: 10px;
+
+            &:first-child {
+
+               svg {
+                  &:nth-child(1) {
+                     flex: 0 0 144px
+                  }
+               }
+            }
+
+            &:last-child {
+               transform: translateX(30%);
+
+               svg {
+                  &:first-child {
+                     flex: 0 0 38px
+                  }
+               }
+            }
+         }
+      }
+
+      @media(max-width: 650px) {
+         &__images {
+            height: 88px;
+            gap: 12px;
+            padding: 0;
+         }
+
+         &__image {
+
+            &:first-child {
+
+               svg {
+                  &:nth-child(1) {
+                     flex: 0 0 176px
+                  }
+               }
+            }
+
+            &:last-child {
+               // transform: translateX(0%);
+
+               svg {
+                  &:first-child {
+                     flex: 0 0 38px
+                  }
+
+               }
+            }
+         }
+      }
+
+      @media(max-width: 550px) {
+         &__wrapper {
+            padding-top: 72px;
+         }
+
+         &__images {
+            margin-bottom: 70px;
+         }
+
+         &__image {
+            &:first-child {
+               transform: translate(0);
+            }
+
+            &:last-child {
+               transform: translate(0);
+               padding-right: 13px;
+
+               svg {
+                  &:first-child {
+                     flex: unset;
+                  }
+
+                  &:last-child {
+                     display: none;
+                  }
+               }
+            }
+         }
+
+         &__text {
+            align-items: start;
+         }
+
+         &__title {
+            text-align: left;
+         }
+      }
+
+      @media(max-width: 450px) {
+         &__image {
+            width: unset;
+         }
+      }
+
+      @media(max-width: 390px) {
+         &__image {
+            // &:first-child {
+            //    svg {
+            //       &:first-child {
+            //          flex: 0 0 179px;
+            //       }
+
+            //       &:last-child {
+            //          flex: 0 0 103px;
+            //       }
+            //    }
+            // }
+            svg {
+               // flex: 0 1 auto !important;
+               width: unset;
+            }
+         }
+      }
+
+      @media(max-width: 375px) {
+         &__image {
+            &:last-child {
+               svg {
+                  display: none;
+               }
+
+               // flex: 0 1 auto !important;
+            }
+         }
+      }
+   }
+}

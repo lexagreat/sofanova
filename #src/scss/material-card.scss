@@ -1,0 +1,43 @@
+.material-card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+   &__image {
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__link {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      background: rgba(241, 239, 236, 0.80);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+
+      &:hover {
+         background-color: $brownQuart;
+      }
+
+      &:active {
+         background-color: $graySecondary;
+      }
+   }
+
+   &__name {
+      color: $blackSecondary;
+   }
+}

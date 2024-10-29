@@ -1,0 +1,40 @@
+.home-trust {
+
+   &__wrapper {}
+
+   &__title {}
+
+   &__content {}
+
+   &__swiper {
+      height: 168px;
+   }
+
+   &__slide {
+      max-width: 336px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid $blackQuart;
+      transition: 0.3s;
+
+      &:hover {
+         border: 1px solid $blackPrimary;
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   @media(max-width: 768px) {
+      &__swiper {
+         height: 148px;
+      }
+
+      &__slide {
+         max-width: 297px;
+      }
+   }
+}

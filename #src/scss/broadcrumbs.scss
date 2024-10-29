@@ -1,0 +1,43 @@
+.broadcrumbs {
+   padding: 8px 0;
+
+   &__list {
+      // ul
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+   }
+
+   &__item {
+
+      // li
+      &:last-child {
+         .broadcrumbs__link {
+            &::after {
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__link {
+      // a
+      overflow: hidden;
+      color: $blackTert;
+      text-overflow: ellipsis;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+
+      &::after {
+         content: "/";
+         color: $blackTert;
+      }
+
+      /* 19.6px */
+   }
+}

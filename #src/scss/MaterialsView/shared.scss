@@ -1,0 +1,49 @@
+.materials {
+   &__hero {
+
+      .service-hero {
+         &__wrapper {
+            background-color: $brandGreen;
+         }
+
+         &__subtitle {
+            max-width: 420px;
+         }
+
+         &__images {
+            padding: 0 56px;
+         }
+
+         @media(max-width: 1440px) {
+            &__images {
+               height: calc(64px + 38 * ((100vw - 768px) / (1440 - 768)));
+               padding: 0 calc(24px + 32 * ((100vw - 768px) / (1440 - 768)));
+            }
+         }
+
+         @media(max-width: 768px) {
+            &__images {
+               height: 64px;
+               padding: 0 24px;
+            }
+         }
+
+         @media(max-width: 650px) {
+            &__images {
+               padding: 0 30px;
+               margin-bottom: 44px;
+            }
+
+            &__text {
+               max-width: unset;
+            }
+         }
+
+         @media(max-width: 550px) {
+            &__text {
+               align-items: start;
+            }
+         }
+      }
+   }
+}

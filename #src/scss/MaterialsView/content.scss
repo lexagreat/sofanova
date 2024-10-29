@@ -1,0 +1,485 @@
+.materials-content {
+   margin-top: 32px;
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   &__header {
+      max-width: 295px;
+      position: relative;
+   }
+
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-self: flex-end;
+      transition: 0.3s;
+      max-width: 100%;
+   }
+
+   &__filters {
+      &.hidden {
+         display: none;
+      }
+
+      align-items: start;
+      column-gap: 24px;
+      row-gap: 12px;
+      display: flex;
+
+      @media(max-width: 450px) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__clear {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+
+      .icon {
+         width: 24px;
+         height: 24px;
+         flex: 0 0 24px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 5px;
+         background: $brownPrimary
+      }
+   }
+
+   &__checked {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      row-gap: 12px;
+      flex-wrap: wrap;
+
+      li {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         white-space: nowrap;
+
+         .icon {
+            width: 24px;
+            height: 24px;
+            flex: 0 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background: $brownQuart
+         }
+      }
+   }
+
+   &__sections {
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+   }
+
+   &__section {}
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         gap: 24px;
+      }
+
+      &__sections {
+         gap: 64px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      &__sections {
+         gap: 56px;
+      }
+   }
+}
+
+.materials-filter {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   z-index: 13;
+   background-color: $white;
+
+   &__open {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $blackQuart;
+      cursor: pointer;
+
+      svg {
+         display: none;
+      }
+
+      &.active {
+         .materials-filter {
+            &__icon {
+               &::before {
+                  opacity: 0;
+               }
+            }
+
+         }
+      }
+   }
+
+   &__icon {
+      width: 24px;
+      height: 24px;
+      flex: 0 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: $brownQuart;
+      position: relative;
+
+      &::after,
+      &::before {
+         content: "";
+         width: 11px;
+         height: 1px;
+         display: block;
+         position: absolute;
+         background-color: $brownPrimary;
+         transition: 0.3s;
+      }
+
+      &::after {
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+
+      &::before {
+         transform-origin: center;
+         transform: translate(0, 50%) rotate(90deg);
+      }
+   }
+
+   &__header {
+      display: none;
+   }
+
+   &__title {}
+
+   &__close {}
+
+   &__main {
+      padding-top: 20px;
+   }
+
+   &__section {
+      padding: 20px 0;
+      border-bottom: 1px solid $blackQuart;
+
+      &:nth-child(1) {
+         padding-top: 0;
+      }
+
+      &:last-child {
+         border: 0;
+      }
+
+      .radio {
+         padding-left: 2px;
+      }
+   }
+
+   &__subheader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      svg {
+         transition: 0.3s;
+      }
+
+      &.active {
+         svg {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   &__dropdown {}
+
+   &__list {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+   }
+
+   &__item {}
+
+   &__footer {
+      display: none;
+   }
+
+   &__remove {}
+
+   &__made {}
+
+   @media(max-width: 992px) {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      background-color: $white;
+      z-index: 12;
+
+      &.active {
+         top: 0;
+      }
+
+      &__header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 16px;
+         border-bottom: 1px solid $blackQuart;
+
+      }
+
+      &__title {
+         font-size: 24px;
+      }
+
+      &__close {
+         border-radius: 10px;
+         background: $brownQuart;
+         width: 48px;
+         height: 48px;
+         flex: 0 0 48px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      &__main {
+         overflow-y: auto;
+         height: calc(100% - 81px - 114px);
+      }
+
+      &__section {
+         padding-left: 16px;
+         padding-right: 16px;
+
+         &:last-child {
+            border-bottom: 1px solid $blackQuart;
+         }
+      }
+
+      &__subheader {
+         span {
+            font-size: 16px;
+         }
+      }
+
+      &__footer {
+         display: flex;
+         gap: 15px;
+         padding: 32px 16px;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: $white;
+      }
+
+      &__open {
+         max-width: fit-content;
+         padding: 12px 16px;
+         gap: 8px;
+         border-radius: 32px;
+         background: rgba(244, 242, 240, 0.80);
+         border: 0;
+
+         svg {
+            display: block;
+         }
+      }
+
+      &__icon {
+         display: none;
+      }
+   }
+
+   @media(max-width: 450px) {
+      &__title {
+         font-size: 18px;
+      }
+
+      &__main {
+         height: calc(100% - 65px - 176px);
+      }
+
+      &__close {
+         width: 32px;
+         height: 32px;
+         flex: 0 0 32px;
+
+         svg {
+            width: 12px;
+            height: 12px;
+            flex: 0 0 12px;
+         }
+      }
+
+      &__footer {
+         flex-direction: column;
+         gap: 12px;
+      }
+   }
+}
+
+.materials-section {
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__title {
+      padding-bottom: 10px;
+   }
+
+   &__btn {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      svg {
+         transition: 0.3s;
+      }
+
+      &.active {
+         svg {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   &__dropdown {}
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 924px;
+      padding-top: 40px;
+
+      a {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+      }
+   }
+
+   &__content {
+      margin-top: 40px;
+   }
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 24px;
+   }
+
+   &__item {
+      flex: 0 0 218px;
+      // flex: 0 0 calc(218 / 1392 * 100%);
+   }
+
+   @media(max-width: 1440px) {
+      &__item {
+         flex: 0 0 calc(178px + 40 * ((100vw - 992px) / (1440 - 992)));
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__list {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+      }
+
+      &__item {
+         flex: unset;
+      }
+
+      &__content {
+         margin-top: 32px;
+      }
+
+      &__description {
+         padding-top: 32px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      &__header {
+         flex-direction: column;
+         gap: 4px;
+         align-items: start;
+      }
+
+      &__title {
+         padding: 0;
+      }
+
+      &__btn {
+         padding: 8px 0;
+      }
+
+      &__list {
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 12px;
+         row-gap: 16px;
+      }
+
+      &__content {
+         margin-top: 24px;
+      }
+
+      &__description {
+         padding-top: 24px;
+         gap: 16px;
+
+         p {
+            font-size: 14px;
+         }
+
+         a {
+            font-size: 16px;
+         }
+      }
+   }
+
+   @media(max-width: 450px) {
+      &__list {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}

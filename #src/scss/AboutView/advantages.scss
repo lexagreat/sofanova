@@ -1,0 +1,149 @@
+.about-advantages {
+
+   &__wrapper {}
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      gap: 24px;
+   }
+
+   &__title {
+      color: rgba(0, 0, 0, 0.80);
+      font-size: 40px;
+      line-height: 115%;
+      /* 46px */
+   }
+
+   &__btns {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+   }
+
+   &__btn {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      border-radius: 50%;
+      background-color: $grayQuart;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: unset;
+      right: unset;
+      left: unset;
+      bottom: unset;
+      margin: 0;
+
+      &::after {
+         display: none;
+      }
+
+      svg {
+         width: 8px;
+      }
+
+      &_prev {}
+
+      &_next {}
+   }
+
+   &__content {
+      padding-left: calc((100vw - 1440px + 48px) / 2);
+
+   }
+
+   &__slider {}
+
+   &__slide {
+      display: flex;
+      flex-direction: column;
+      max-width: 453px;
+      height: auto;
+   }
+
+   &__image {
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__subtitle {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: $blackPrimary;
+   }
+
+   &__text {
+      color: rgba(0, 0, 0, 0.60);
+   }
+
+   @media(max-width: 1440px) {
+      &__content {
+         padding-left: 24px;
+      }
+
+      &__slide {
+         max-width: calc(297px + 156 * ((100vw - 768px) / (1440 - 768)));
+      }
+
+      &__subtitle {
+         font-size: calc(20px + 4 * ((100vw - 768px) / (1440 - 768)));
+      }
+
+      &__text {
+         font-size: calc(14px + 2 * ((100vw - 768px) / (1440 - 768)));
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__content {
+         padding-left: 16px;
+      }
+
+      &__header {
+         margin-bottom: 32px;
+      }
+
+      &__subtitle {
+         margin-top: 20px;
+         margin-bottom: 8px;
+      }
+   }
+
+   @media(max-width: 768px) {
+      &__slide {
+         max-width: 297px;
+      }
+
+      &__subtitle {
+         font-size: 20px;
+      }
+
+      &__text {
+         font-size: 14px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      &__content {
+         padding-left: 12px;
+      }
+
+      &__header {
+         margin-bottom: 24px;
+      }
+
+      &__title {
+         font-size: 28px;
+      }
+   }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Статус заказа",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="broadcrumbs">
+            <div class="container">
+               <ul class="broadcrumbs__list">
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Sofanova</a>
+                  </li>
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Статус заказа</a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="status section">
+            <div class="container">
+               <div class="status__wrapper">
+                  <div class="status__form status-form">
+                     <div class="status-form__wrapper">
+                        <div class="status-form__header">
+                           <h2 class="status-form__title h2">
+                              <span>Проверить</span>
+                              <span>статус заказа</span>
+                           </h2>
+                           <div class="status-form__image">
+                              <img src="img/status/form.svg" alt="">
+                           </div>
+                        </div>
+                        <form action="#" class="status-form__main">
+                           <div class="status-form__inputs">
+                              <div class="status-form__input">
+                                 <input type="number" class="input" placeholder="Номер заказа">
+                              </div>
+                              <div class="status-form__input">
+                                 <input type="text" class="input" placeholder="+7 (999) 999-99-99" id="statusPhone">
+                              </div>
+                           </div>
+                           <button type="button" class="status-form__btn btn btn_dark">Проверить</button>
+                        </form>
+                     </div>
+                     <a href="#" class="status-form__link button__name">
+                        <span>Ответы на частые вопросы</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <path d="M2.2604 14L14.5 1.5M14.5 1.5V14.5M14.5 1.5H1.5" stroke="#423C39" stroke-width="1.2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="status__main">
+                     <h1 class="status__title h2">
+                        <span>Статус заказа</span> <span>№45673</span>
+                     </h1>
+                     <div class="status__content">
+                        <div class="status__line"></div>
+                        <ul class="status__steps">
+                           <li class="status__step status-step active">
+                              <div class="status-step__title h4">Заказ оформлен</div>
+                              <div class="status-step__text">В согласованные дату и время наша служба логистики
+                                 аккуратно разберет, упакует и заберет мебель в мастерскую</div>
+                           </li>
+                           <li class="status__step status-step">
+                              <div class="status-step__title h4">Заказ в работе</div>
+                              <div class="status-step__text">Мебель в стадии разборки, пошива нового кроя, ремонта
+                                 и обивки</div>
+                           </li>
+                           <li class="status__step status-step">
+                              <div class="status-step__title h4">Заказ на хранении </div>
+                              <div class="status-step__text">Мебель находится на хранении</div>
+                           </li>
+                           <li class="status__step status-step">
+                              <div class="status-step__title h4">Заказ в доставке</div>
+                              <div class="status-step__text">Ваша мебель находится в доставке. Доставим заказ в
+                                 согласованные заранее дату и время</div>
+                           </li>
+                           <li class="status__step status-step">
+                              <div class="status-step__title h4">Получен</div>
+                              <div class="status-step__text">Ваша мебель доставлена</div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://unpkg.com/imask"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

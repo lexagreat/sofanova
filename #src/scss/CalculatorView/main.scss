@@ -1,0 +1,398 @@
+.calculator {
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 96px;
+
+      .calc-type {
+         &__main {
+            max-width: 921px;
+
+            @media(max-width: 992px) {
+               max-width: 486px;
+            }
+
+         }
+      }
+
+      .calc-content {
+         @media(max-width: 650px) {
+            &__title {
+               font-size: 24px;
+            }
+         }
+      }
+
+      .calc-content__type {
+         padding: 32px;
+
+         @media(max-width: 768px) {
+            padding: 24px 12px;
+         }
+      }
+
+      .calc-chars {
+         &__main {
+            width: 100%;
+         }
+
+         &__card {
+            border: 0;
+         }
+      }
+
+      .calc-materials {
+         &__card {
+            border: 0;
+         }
+
+         &__details {
+            padding-top: 32px;
+            padding-bottom: 40px;
+            padding-left: 12px;
+            padding-right: 12px;
+
+            @media(max-width: 992px) {
+               padding-top: 24px;
+               padding-bottom: 30px;
+            }
+
+            @media(max-width: 650px) {
+               padding-bottom: 24px;
+            }
+         }
+
+         &__grid {
+            @media(max-width: 650px) {
+               padding: 0 20px;
+            }
+
+            @media(max-width: 450px) {
+               width: 100%;
+            }
+         }
+
+         &__item {
+            @media(max-width: 650px) {
+               label {
+                  padding: 12px;
+                  // display: grid;
+                  // grid-template-columns: 1fr;
+                  // grid-template-rows: auto 1fr;
+                  // align-items: start;
+               }
+            }
+
+            @media(max-width: 450px) {
+               label {
+                  padding: 12px 3px;
+               }
+
+            }
+         }
+
+         &__image {
+            @media(max-width: 450px) {
+               flex: 0 0 62px;
+               width: 62px;
+               height: 62px;
+            }
+         }
+
+         &__span {
+            @media(max-width: 650px) {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+
+   &__card {
+      background-color: $grayTert;
+      border-radius: 8px;
+   }
+
+   &__btn {
+      max-width: 340px;
+      margin: 0 auto;
+      margin-top: 72px;
+   }
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         gap: 64px;
+      }
+
+      &__btn {
+         margin-top: 64px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      &__wrapper {
+         gap: 40px;
+      }
+
+      &__btn {
+         margin-top: 32px;
+      }
+   }
+
+   @media(max-width: 450px) {
+      &__btn {
+         max-width: 100%;
+      }
+   }
+}
+
+
+
+
+
+
+.calculator-result {
+
+   .calc-materials__item label,
+   .calc-type__card {
+      border: 0;
+      cursor: default;
+   }
+
+   .calc-type {
+      &__card {
+         height: 216px;
+      }
+
+      &__image {
+         width: calc(300 / 452 * 100%);
+      }
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   &__title {}
+
+   &__main {
+      display: flex;
+      gap: 32px;
+   }
+
+   &__form {}
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   &__subtitle {}
+
+   &__list {
+      max-width: 452px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   &__type {}
+
+   &__card {
+      border-radius: 8px;
+      border: 1px solid $blackQuart;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 12px;
+
+      span {
+         &:nth-child(2) {
+            color: $blackTert;
+         }
+      }
+   }
+
+   &__detail {
+      max-width: fit-content;
+
+   }
+
+   &__footer {
+      max-width: 425px;
+      color: $brownPrimary;
+      font-size: 40px;
+      line-height: 115%;
+      display: flex;
+      justify-content: space-between;
+      /* 46px */
+      border-top: 1px solid $blackQuart;
+      padding-top: 24px;
+   }
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         gap: 32px;
+      }
+
+      &__main {
+         flex-direction: column;
+         gap: 64px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      margin-bottom: 40px;
+
+      &__wrapper {
+         gap: 24px;
+      }
+
+      &__content {
+         gap: 24px;
+      }
+
+      &__list {
+         max-width: 100%;
+      }
+
+      &__footer {
+         max-width: 100%;
+         font-size: 28px;
+      }
+
+      .calc-materials {
+         &__image {
+            width: 80px;
+            height: 80px;
+            flex: 0 0 80px;
+         }
+      }
+
+      .calc-type {
+         &__card {
+            height: 188px;
+         }
+
+         &__image {
+            width: unset;
+            height: 80%;
+         }
+      }
+   }
+}
+
+.calculator-form {
+   padding: 32px;
+   border-radius: 8px;
+   background-color: $brandGreen;
+   max-height: fit-content;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   position: sticky;
+   top: 80px;
+
+   &__title {
+      display: flex;
+      flex-direction: column;
+
+      span {
+         &:nth-child(1) {
+            color: $brownPrimary;
+         }
+
+         &:nth-child(2) {
+            color: $brownSecondary;
+         }
+      }
+   }
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   &__inputs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+   }
+
+   &__input {
+      &:last-child {
+         grid-column: span 3;
+      }
+   }
+
+   &__footer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   &__btn {}
+
+   &__politics {
+      a {
+         text-decoration: underline;
+         color: $blackSecondary;
+      }
+   }
+
+   @media(max-width: 1200px) {
+      &__inputs {
+         display: flex;
+         flex-direction: column;
+      }
+
+      &__input {
+         &:last-child {
+            grid-column: unset;
+         }
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__inputs {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      &__input {
+         &:last-child {
+            grid-column: span 3;
+         }
+      }
+   }
+
+   @media(max-width: 650px) {
+      padding: 32px 12px;
+
+      &__inputs {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+      }
+
+      &__input {
+         &:last-child {
+            grid-column: unset;
+         }
+      }
+
+      &__footer {
+         gap: 12px;
+      }
+
+      &__politics {
+         font-size: 14px;
+      }
+   }
+}

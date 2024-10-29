@@ -1,0 +1,156 @@
+.home-production {
+
+   &__wrapper {
+      padding-left: calc((100vw - 1440px + 48px) / 2);
+      // padding-right: 24px;
+   }
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      // user-select: none;
+   }
+
+   &__slide {}
+
+   @media(max-width: 1440px) {
+      &__wrapper {
+         padding-left: 24px;
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         padding-left: 16px;
+         // padding-right: 16px;
+      }
+
+      &__header {
+         margin-bottom: 32px;
+      }
+   }
+
+   @media(max-width: 650px) {
+
+      &__wrapper {
+         padding-left: 12px;
+         // padding-right: 12px;
+      }
+
+      &__header {
+         margin-bottom: 24px;
+      }
+   }
+}
+
+.production-swiper {
+   height: 300px;
+   width: 100%;
+   overflow: hidden;
+   padding-right: 24px;
+
+   @media(max-width: 992px) {
+      padding-right: 16px;
+   }
+
+   @media(max-width: 650px) {
+      padding-right: 12px;
+   }
+
+   &__wrapper {}
+
+   &__btns {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+   }
+
+   &__btn {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      border-radius: 50%;
+      background-color: $brownQuart;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      left: unset;
+      right: unset;
+      top: unset;
+      bottom: unset;
+      margin: unset;
+      transition: 0.3s;
+
+      &:hover {
+         background-color: $grayPrimary;
+      }
+
+      svg {
+         width: unset;
+         height: unset;
+         object-fit: unset;
+      }
+
+      &::after {
+         font-size: 0;
+         display: none;
+      }
+
+      &_prev {}
+
+      &_next {}
+   }
+
+   &__slide {
+      user-select: none;
+      width: 450px;
+   }
+
+   &__image {
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   @media(max-width: 768px) {
+      height: 190px;
+
+      &__slide {
+         width: 300px;
+
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   @media(max-width: 375px) {
+      &__btn {
+         width: 32px;
+         height: 32px;
+         flex: 0 0 32px;
+      }
+   }
+
+   @media(max-width: 350px) {
+      &__slide {
+         width: 100%;
+      }
+   }
+}

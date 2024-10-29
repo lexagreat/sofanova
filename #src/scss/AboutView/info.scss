@@ -1,0 +1,151 @@
+.about-info {
+
+   &__wrapper {}
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__list {
+      display: flex;
+
+      input {
+         display: none;
+      }
+
+      label {
+         padding: 4px 16px;
+         color: $blackTert;
+         transition: 0.3s;
+         cursor: pointer;
+         white-space: nowrap;
+         position: relative;
+
+         &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $blackPrimary;
+            transform: scale(0);
+            transition: 0.3s;
+         }
+
+         @media(max-width: 650px) {
+            padding: 4px 10px;
+         }
+      }
+
+      input:checked+label {
+         color: $blackPrimary;
+
+         &::after {
+            transform: scale(1);
+         }
+      }
+
+      @media(max-width: 350px) {
+         height: 30px;
+         overflow-x: auto;
+         overflow-y: visible;
+         -ms-overflow-style: none;
+         overflow: -moz-scrollbars-none;
+
+         /* хром, сафари */
+         &::-webkit-scrollbar {
+            height: 0;
+         }
+      }
+   }
+}
+
+.about-tab {
+   display: none;
+
+   &.active {
+      display: block;
+   }
+
+   &__wrapper {
+      display: flex;
+      gap: 40px;
+   }
+
+   &__info {
+      flex: 0 0 430px;
+   }
+
+   &__title {
+      color: rgba(0, 0, 0, 0.80);
+   }
+
+   &__text {
+      margin-top: 32px;
+      margin-bottom: 40px;
+      color: $blackSecondary;
+   }
+
+   &__link {
+      padding: 0 40px;
+      max-width: fit-content;
+      color: $blackPrimary;
+   }
+
+   &__video {
+      flex: 1 1 922px;
+      position: relative;
+      max-height: 522px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      svg {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         flex-direction: column;
+      }
+
+      &__info {
+         flex: unset;
+      }
+
+      &__video {
+         flex: unset;
+      }
+
+      &__text {
+         margin-top: 32px;
+         margin-bottom: 24px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      &__text {
+         margin-top: 24px;
+      }
+   }
+
+   @media(max-width: 390px) {
+      &__link {
+         max-width: unset;
+         padding: unset;
+      }
+   }
+}

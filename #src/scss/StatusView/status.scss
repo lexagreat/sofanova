@@ -1,0 +1,249 @@
+.status {
+   margin-top: 32px;
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+   }
+
+   &__form {}
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   &__title {
+      span {
+         &:nth-child(1) {
+            color: $brownPrimary;
+         }
+
+         &:nth-child(2) {
+            color: rgba(66, 60, 57, 0.60);
+         }
+      }
+   }
+
+   &__content {
+      display: flex;
+      gap: 16px;
+   }
+
+   &__line {
+      flex: 0 0 22px;
+      width: 22px;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         top: 14px;
+         bottom: 60px;
+         width: 1px;
+         background-color: $grayTert;
+      }
+   }
+
+   &__steps {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+   }
+
+   &__step {}
+
+   @media(max-width: 992px) {
+      margin-top: 24px;
+
+      &__wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 96px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      margin-top: 17px;
+
+      &__wrapper {
+         gap: 54px;
+      }
+   }
+
+   @media(max-width: 450px) {
+      &__steps {
+         gap: 24px;
+      }
+
+      &__content {
+         gap: 12px;
+      }
+   }
+}
+
+.status-step {
+   padding: 12px;
+   border-radius: 8px;
+   border: 1px solid $grayTert;
+   transition: 0.3s;
+   max-width: 452px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      transform: translateX(-100%);
+      left: -22px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid $grayTert;
+      background-color: $white;
+      transition: 0.3s;
+   }
+
+   &__title {
+      color: rgba(0, 0, 0, 0.35);
+      transition: 0.3s;
+   }
+
+   &__text {
+      color: rgba(0, 0, 0, 0.35);
+      transition: 0.3s;
+      line-height: 140%;
+      /* 19.6px */
+   }
+
+   &.active {
+      background-color: $grayTert;
+
+      &::before {
+         border: 1px solid #000;
+         background-color: #000;
+      }
+
+      .status-step {
+
+         &__title {
+            color: $blackPrimary;
+         }
+
+         &__text {
+            color: rgba(0, 0, 0, 0.60);
+         }
+      }
+   }
+
+   @media(max-width: 450px) {
+      &::before {
+         left: -18px;
+      }
+   }
+}
+
+.status-form {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 32px 0;
+      background-color: $brandGreen;
+      border-radius: 8px;
+      overflow: hidden;
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 32px;
+      gap: 24px;
+   }
+
+   &__title {
+      display: flex;
+      flex-direction: column;
+
+      span {
+         white-space: nowrap;
+
+         &:nth-child(1) {
+            color: $brownPrimary;
+         }
+
+         &:nth-child(2) {
+            color: $brownSecondary;
+         }
+      }
+   }
+
+   &__image {
+      flex: 0 1;
+   }
+
+   &__main {
+      padding: 0 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   &__inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+   }
+
+   &__input {}
+
+   &__btn {}
+
+   &__link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+
+   @media(max-width: 992px) {
+      &__wrapper {
+         padding: 24px 0;
+      }
+
+      &__header {
+         padding-left: 24px;
+      }
+
+      &__main {
+         padding: 0 24px;
+      }
+   }
+
+   @media(max-width: 650px) {
+      gap: 32px;
+
+      &__wrapper {
+         padding: 32px 0;
+      }
+
+      &__header {
+         padding-left: 12px;
+      }
+
+      &__main {
+         padding: 0 12px;
+      }
+   }
+}

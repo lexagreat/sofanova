@@ -1,0 +1,208 @@
+.portfolio-detail {
+   &__hero {
+      .service-hero {
+         &__wrapper {
+            background-color: $grayTert;
+         }
+
+         &__image {
+            @media(max-width: 650px) {
+
+               &:nth-child(1) {
+                  transform: translateX(-32%);
+               }
+
+               &:nth-child(2) {
+                  transform: translateX(32%);
+               }
+            }
+         }
+      }
+   }
+
+   &__actions {
+      .service-actions {
+         &__wrapper {
+            background-color: $brandGreen;
+         }
+
+         &__image {
+            width: 250px;
+            height: 110px;
+
+            img {
+               object-fit: contain;
+            }
+         }
+      }
+   }
+
+   &__slider {
+      .home-trust {
+         &__title {
+            text-align: center;
+            max-width: 717px;
+            margin: 0 auto;
+         }
+      }
+
+      .home-production {
+         &__header {
+            position: relative;
+            align-items: flex-end;
+            gap: 32px;
+         }
+      }
+
+      .production-swiper {
+         &__btns {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+         }
+      }
+
+      @media(max-width: 992px) {
+         .home-trust {
+            &__title {
+               text-align: left;
+               max-width: 523px;
+               margin: unset;
+            }
+         }
+
+         .production-swiper {
+            &__btns {
+               position: relative;
+               right: unset;
+               bottom: unset;
+            }
+         }
+      }
+   }
+
+   &__form {
+      .form {
+         &__wrapper {
+            background-color: $brandBlue;
+         }
+
+         &__content {
+            max-width: unset;
+         }
+
+         @media(max-width: 992px) {
+            &__images {
+               top: 40px;
+               height: 48px;
+
+               svg {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+               }
+            }
+
+            &__image {
+               height: 100%;
+            }
+         }
+      }
+   }
+}
+
+
+.portfolio-detail {
+
+   &__slider {}
+
+   &__swiper {
+      height: 294px;
+   }
+
+   &__slide {
+      max-width: 453px;
+      border-radius: 8px;
+      background: $grayTert;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   @media(max-width: 1440px) {
+      height: calc(190px + 100 * ((100vw - 768px) / (1440 - 768)));
+
+      &__slide {
+         max-width: calc(296px + 157 * ((100vw - 768px) / (1440 - 768)));
+      }
+   }
+
+   @media(max-width: 768px) {
+      &__swiper {
+         height: 190px;
+      }
+
+      &__slide {
+         max-width: 296px;
+      }
+   }
+}
+
+.portfolio-swiper {
+
+   &__btn {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      border-radius: 50%;
+      background-color: $brownQuart;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      left: unset;
+      right: unset;
+      top: unset;
+      bottom: unset;
+      margin: unset;
+      transition: 0.3s;
+
+      &:hover {
+         background-color: $grayPrimary;
+      }
+
+      svg {
+         width: unset;
+         height: unset;
+         object-fit: unset;
+      }
+
+      &::after {
+         font-size: 0;
+         display: none;
+      }
+
+      &_prev {}
+
+      &_next {}
+   }
+
+   @media(max-width: 375px) {
+      &__btn {
+         width: 32px;
+         height: 32px;
+         flex: 0 0 32px;
+      }
+   }
+
+   @media(max-width: 350px) {
+      &__slide {
+         width: 100%;
+      }
+   }
+}

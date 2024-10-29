@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Услуги",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main active">
+         <!-- <section class="running-line">
+            <div class="container">
+               <div class="running-line__inner">
+                  <div class="running-line__wrapper running-line__wrapper_first">
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           Гарантия 12 месяцев
+                        </span>
+                     </div>
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           Cовременное оборудование
+                        </span>
+                     </div>
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           Опытные сотрудники
+                        </span>
+                     </div>
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           Своя служба логистики
+                        </span>
+                     </div>
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           5000+ образцов материалов
+                        </span>
+                     </div>
+                     <div class="running-line__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                              fill="#BDDCB5" />
+                        </svg>
+                        <span class="text14">
+                           Бесплатный выезд дизайнера
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+         <div class="container">
+            <section class="home block runeline">
+               <div class="marquee-0">
+                  <div class="marquee marquee-b2b">
+                     <div class="marquee__group">
+                        <!-- <a href="">клавишные</a>
+                        <a>видео оборудование</a>
+                        <a>midi</a>
+                        <a>dj-сеты</a>
+                        <a>микрофоны</a>
+                        <a>наушники</a>
+                        <a>топ-25 наушников</a>
+                        <a>Световое оборудование</a>
+                        <a>акустические системы</a>
+                        <a>виниловые пластинки</a>
+                        <a>плееры</a> -->
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Гарантия 12 месяцев
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Cовременное оборудование
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Опытные сотрудники
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Своя служба логистики
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              5000+ образцов материалов
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Бесплатный выезд дизайнера
+                           </span>
+                        </div>
+                     </div>
+
+                     <div aria-hidden="true" class="marquee__group">
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Гарантия 12 месяцев
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Cовременное оборудование
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Опытные сотрудники
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Своя служба логистики
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              5000+ образцов материалов
+                           </span>
+                        </div>
+                        <div class="running-line__item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M11.5 1C8.71523 1 6.04451 2.10625 4.07538 4.07538C2.10625 6.04451 1 8.71523 1 11.5C1 14.2848 2.10625 16.9555 4.07538 18.9246C6.04451 20.8938 8.71523 22 11.5 22C14.2848 22 16.9555 20.8938 18.9246 18.9246C20.8938 16.9555 22 14.2848 22 11.5C22 8.71523 20.8938 6.04451 18.9246 4.07538C16.9555 2.10625 14.2848 1 11.5 1ZM10 15.693L6.25 11.943L7.443 10.75L10 13.307L15.558 7.75L16.754 8.94L10 15.693Z"
+                                 fill="#BDDCB5" />
+                           </svg>
+                           <span class="text14">
+                              Бесплатный выезд дизайнера
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+
+
+         <section class="broadcrumbs">
+            <div class="container">
+               <ul class="broadcrumbs__list">
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Sofanova</a>
+                  </li>
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Услуги</a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="services-hero">
+            <div class="container">
+               <div class="services-hero__wrapper">
+                  <h1 class="services-hero__title h1">Услуги</h1>
+               </div>
+            </div>
+         </section>
+         <section class="services">
+            <div class="container">
+               <div class="services__inner">
+                  <div class="services__header">
+                     <ul class="services__list">
+                        <li class="services__link body">
+                           <input checked type="radio" name="services" value="services1" id="services1">
+                           <label for="services1">
+                              Перетяжка
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services2" id="services2">
+                           <label for="services2">
+                              Пошив чехлов
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services3" id="services3">
+                           <label for="services3">
+                              Замена наполнителя
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services4" id="services4">
+                           <label for="services4">
+                              Реставрация
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services5" id="services5">
+                           <label for="services5">
+                              Ремонт
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services6" id="services6">
+                           <label for="services6">
+                              Коммерческая мебель
+                           </label>
+                        </li>
+                        <li class="services__link body">
+                           <input type="radio" name="services" value="services7" id="services7">
+                           <label for="services7">
+                              Индивидуальный заказ
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="services__content">
+                     <div class="services__wrapper active services-tab" data-tab="services1">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card2.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services2">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services3">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services4">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services5">
+                        <div class="services-tab__grid">
+                           <div class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services6">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="services__wrapper" data-tab="services7">
+                        <div class="services-tab__grid">
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="services-tab__card services-card">
+                              <div class="services-card__image">
+                                 <img src="img/home/type-card.png" alt="">
+                              </div>
+                              <div class="services-card__content">
+                                 <div class="services-card__title h5">Перетяжка и реставрация диванов</div>
+                                 <div class="services-card__text">
+                                    Мы работаем с диванами как старыми и снятыми с
+                                    производства, так и с моделями изготовления ведущих фабрик Европы, в том числе,
+                                    выполняем перетяжку диванов кожей как искусственной, так и натуральной
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="services-banner section">
+            <div class="container">
+               <a href="#" class="services-banner__wrapper">
+                  <div class="services-banner__image">
+                     <img src="img/services/banner-image.png" alt="">
+                  </div>
+                  <div class="services-banner__content">
+                     <div class="services-banner__header">
+                        <h2 class="services-banner__title h1">
+                           <span>Частичная перетяжка</span>
+                           <span>(подлокотники)</span>
+                        </h2>
+                        <div href="#" class="services-banner__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                              fill="none">
+                              <path d="M14.4999 36L37.9999 12M37.9999 12V36.96M37.9999 12H13.0399" stroke="black"
+                                 stroke-opacity="0.85" stroke-width="3" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                     </div>
+                     <p class="services-banner__text">
+                        Мы выполним перетяжку проблемных зон, а вы сэкономите существенную часть бюджета!
+                     </p>
+                  </div>
+               </a>
+            </div>
+         </section>
+         <section class="services-process section">
+            <div class="container">
+               <div class="services-process__wrapper">
+                  <div class="services-process__header">
+                     <h2 class="services-process__title h2">
+                        Процесс работы над заказом
+                     </h2>
+                  </div>
+                  <div class="services-process__content">
+                     <div class="services-process__card">
+                        <div class="services-process__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                              fill="none">
+                              <path
+                                 d="M1.17389 19.663V25.3565C1.17389 25.4537 1.25273 25.5326 1.34998 25.5326H25.65C25.7472 25.5326 25.8261 25.4537 25.8261 25.3565V19.8391C25.8261 19.7418 25.7472 19.663 25.65 19.663H21.4239M1.17389 19.663H1.76085M1.17389 19.663V1.17387H7.46623M1.76085 19.663H21.4239M1.76085 19.663L2.3478 19.4724M21.4239 19.663L26.2353 18.2479C26.332 18.2194 26.3851 18.1159 26.3518 18.0208L24.975 14.0869M24.975 14.0869L24.4155 12.4885C24.3839 12.3982 24.286 12.3496 24.195 12.3792L2.3478 19.4724M24.975 14.0869L25.624 13.8631C25.7287 13.827 25.7745 13.7043 25.719 13.6084L22.6845 8.36709C22.6364 8.28397 22.5305 8.25475 22.4466 8.30141L22.3043 8.38047M2.3478 19.4724L2.93476 19.1462M2.3478 19.4724L7.46623 1.17387M2.93476 19.1462L22.3043 8.38047M2.93476 19.1462L3.22824 18.8625M22.3043 8.38047L18.4891 4.10865L18.1855 4.40213M3.22824 18.8625L18.1855 4.40213M3.22824 18.8625L12.8698 2.05431M18.1855 4.40213L13.2065 1.46735L12.8698 2.05431M12.8698 2.05431L7.63041 0.586914L7.46623 1.17387"
+                                 stroke="#848382" stroke-width="0.6" stroke-linejoin="round" />
+                              <circle cx="3.66849" cy="22.6273" r="1.02065" fill="#D9D9D9" stroke="#848382"
+                                 stroke-width="0.6" />
+                           </svg>
+                        </div>
+                        <div class="services-process__text">
+                           <div class="services-process__subtitle h4">Выезд дизайнера с образцами материала</div>
+                           <div class="services-process__description body">Определяемся с цветом, фактурой,
+                              износоустойчивостью.</div>
+                        </div>
+                     </div>
+                     <div class="services-process__card">
+                        <div class="services-process__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27"
+                              fill="none">
+                              <path
+                                 d="M19.439 6.26829V25.8781C19.439 26.0397 19.308 26.1707 19.1463 26.1707H1.29268C1.13104 26.1707 1 26.0397 1 25.8781V1.29268C1 1.13104 1.13104 1 1.29268 1H14.3171M19.439 6.26829L14.3171 1M19.439 6.26829H14.6098C14.4481 6.26829 14.3171 6.13725 14.3171 5.97561V1M3.63415 7H11.0976M3.63415 10.8049H16.9512M3.63415 14.4634H16.9512M3.63415 18.2683H16.9512M3.63415 21.7805H8.60976"
+                                 stroke="#848382" stroke-width="0.6" stroke-linejoin="round" />
+                              <path
+                                 d="M21.6342 6.26836V5.07253C21.6342 4.99491 21.665 4.91943 21.7221 4.86679C22.9228 3.75878 24.2775 4.3556 24.903 4.8674C24.9665 4.91936 25 4.99801 25 5.08005V6.26836M21.6342 6.26836V21.9269M21.6342 6.26836H22.7317M25 6.26836V21.9269M25 6.26836H23.8293M22.5285 24.2684L21.6558 22.1263C21.6415 22.0913 21.6342 22.0538 21.6342 22.0159V21.9269M22.5285 24.2684L22.9846 25.3879C23.0819 25.6268 23.4183 25.6321 23.5231 25.3963L24.0244 24.2684M22.5285 24.2684H24.0244M24.0244 24.2684L24.9748 22.13C24.9914 22.0926 25 22.0521 25 22.0111V21.9269M21.6342 21.9269H22.7317M25 21.9269H23.8293M23.8293 6.26836V21.9269M23.8293 6.26836H22.7317M23.8293 21.9269H22.7317M22.7317 21.9269V6.26836"
+                                 stroke="#848382" stroke-width="0.6" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="services-process__text">
+                           <div class="services-process__subtitle h4">Составляем договор</div>
+                           <div class="services-process__description body">Сроком от 1 до 10 рабочих дней (зависит от
+                              конкретного изделия и может быть увеличен в зависимости от объёма) вносите авансовый
+                              платёж в размере 50% для заказа материал.</div>
+                        </div>
+                     </div>
+                     <div class="services-process__card">
+                        <div class="services-process__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30"
+                              fill="none">
+                              <path
+                                 d="M19.4986 1.59691C19.5373 1.53573 19.5844 1.48063 19.6384 1.43312L19.7594 1.37522C19.8586 1.3278 19.9036 1.31302 19.9761 1.30547C20.0675 1.29594 20.2018 1.29881 20.4794 1.31391C22.8721 1.51267 23.96 1.76812 25.0355 2.54139C26.4671 3.7475 27.5247 5.33741 28.0837 7.12416L28.0836 7.12419L28.0858 7.13072L28.2663 7.66426L28.2338 7.70927C28.2041 7.74278 28.1652 7.76693 28.1219 7.77868C28.0944 7.78612 28.066 7.78836 28.0381 7.78548C27.8971 7.63486 27.7653 7.47587 27.6435 7.30937C26.8632 6.20588 25.8228 5.31181 24.6144 4.70636L24.601 4.69965L24.587 4.69431C24.2977 4.58384 24.0482 4.5202 23.8406 4.50763C23.6409 4.49552 23.4222 4.52811 23.2679 4.68244C23.2229 4.7274 23.1642 4.79135 23.1241 4.89815C23.0899 4.98905 23.0756 5.09399 23.067 5.21452C23.05 5.45389 23.05 5.87128 23.05 6.63484V6.66423V6.66458C23.05 6.76598 23.0501 6.86879 23.0503 6.972C23.0507 7.33437 23.0511 7.70166 23.0463 8.03017C23.04 8.46069 23.0246 8.79514 22.9947 8.96159C22.9546 9.18521 22.9374 9.61921 22.9288 10.1118C22.92 10.614 22.92 11.208 22.92 11.7714C22.8946 12.9594 22.9351 14.1478 23.0412 15.3314L23.0411 15.3314L23.042 15.3389C23.1995 16.7075 23.2 17.1063 23.2 22.8546L23.2 22.8556C23.21 25.817 23.2144 27.4488 23.2027 28.3733C23.1968 28.8367 23.1869 29.1144 23.1724 29.2904C23.1679 29.3452 23.1631 29.3877 23.1584 29.421C23.076 29.4337 22.9629 29.4457 22.824 29.4566C22.5137 29.4809 22.104 29.4979 21.6923 29.5095C21.2817 29.5212 20.8734 29.5274 20.5674 29.5308C20.4145 29.5325 20.2873 29.5334 20.1984 29.5339L20.0954 29.5345L20.0684 29.5346L20.0616 29.5346L20.0599 29.5346L20.0595 29.5346H20.0593L20.0511 29.5346L20.0428 29.5351C19.2432 29.5809 18.4015 29.5679 17.5888 29.5085C17.4988 29.5019 17.4325 29.4337 17.4256 29.3514C17.3701 28.6897 17.3534 27.8366 17.3509 27.1437C17.3497 26.7984 17.3519 26.4949 17.3545 26.2779C17.3558 26.1693 17.3571 26.0825 17.3582 26.0228L17.3594 25.9545L17.3598 25.9369L17.3599 25.9326L17.3599 25.9315L17.3599 25.9313L17.3599 25.9312L17.36 25.9312V25.9246V22.6246C17.36 22.1828 17.0018 21.8246 16.56 21.8246H12.56C12.1182 21.8246 11.76 22.1828 11.76 22.6246V25.9146H11.7597L11.7603 25.9281C11.8113 27.0629 11.7959 28.1997 11.7142 29.3325C11.7074 29.4264 11.6328 29.5008 11.5385 29.5074C10.3586 29.5897 9.17481 29.6055 7.99284 29.5549L7.99285 29.5546H7.98C6.24827 29.5546 5.27528 29.5521 4.72366 29.5384C4.47944 29.5324 4.32659 29.5243 4.23025 29.5146C4.22922 29.5029 4.22819 29.49 4.22717 29.476C4.21526 29.3133 4.20686 29.0372 4.20123 28.5674C4.19001 27.631 4.19 25.9562 4.19 22.9553V22.9546V16.2446V15.9446H3.89H2.52C1.96435 15.9446 1.63196 15.9424 1.43043 15.9289C1.48611 15.869 1.55398 15.7973 1.63443 15.7134C1.91168 15.424 2.32957 14.998 2.8908 14.4305C3.57155 13.7422 4.46091 12.848 5.56214 11.7408C6.27611 11.023 7.07914 10.2156 7.97211 9.31674C7.97234 9.3165 7.97258 9.31626 7.97282 9.31601L14.7214 2.6175L14.81 2.5295V2.40458V2.07458C14.81 1.73826 14.8752 1.66993 14.9392 1.63114C14.9918 1.5993 15.083 1.56694 15.246 1.54504C15.4072 1.52338 15.6163 1.51458 15.89 1.51458C16.2553 1.51458 16.4255 1.51509 16.5281 1.5265C16.5728 1.53147 16.5898 1.53724 16.597 1.54007C16.6027 1.54233 16.6106 1.546 16.6278 1.55698C16.6929 1.6249 16.7487 1.70117 16.7937 1.78381C16.8873 2.04291 17.1132 2.17922 17.3378 2.24961C17.5676 2.32161 17.8514 2.3442 18.1522 2.34458C18.424 2.35781 18.6942 2.2948 18.9322 2.16257C19.1701 2.03044 19.3662 1.83449 19.4986 1.59691ZM4.2457 29.6275C4.24563 29.6276 4.24504 29.6259 4.24411 29.6219C4.2453 29.6254 4.24577 29.6274 4.2457 29.6275Z"
+                                 stroke="#848382" stroke-width="0.6" />
+                           </svg>
+                        </div>
+                        <div class="services-process__text">
+                           <div class="services-process__subtitle h4">Забираем в мастерскую</div>
+                           <div class="services-process__description body">Наши сотрудники приедут в удобное вам время,
+                              разберут мебель и доставят в мастерскую.</div>
+                        </div>
+                     </div>
+                     <div class="services-process__card">
+                        <div class="services-process__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="23" viewBox="0 0 36 23"
+                              fill="none">
+                              <path
+                                 d="M35 11.7983V18.9485C35 19.1097 34.8693 19.2403 34.7082 19.2403H22.3047M35 11.7983L32.3093 7.85837M35 11.7983H29.309C29.1478 11.7983 29.0172 11.6676 29.0172 11.5064V8.15021C29.0172 7.98903 29.1478 7.85837 29.309 7.85837H32.3093M22.3047 5.81545H30.7601C30.8565 5.81545 30.9467 5.86308 31.0011 5.94271L32.3093 7.85837M22.3047 5.81545V19.2403M22.3047 5.81545V1.29185C22.3047 1.13066 22.1741 1 22.0129 1H1.29184C1.13066 1 1 1.13066 1 1.29185V15.1545M22.3047 19.2403H2.45923M1 15.1545V18.9485C1 19.1097 1.13066 19.2403 1.29185 19.2403H2.45923M1 15.1545H2.16738C2.32856 15.1545 2.45923 15.2852 2.45923 15.4464V19.2403"
+                                 stroke="#848382" stroke-width="0.7" stroke-linejoin="round" />
+                              <circle cx="6.83696" cy="19.0644" r="2.71438" fill="#F4F2F0" stroke="#848382"
+                                 stroke-width="0.7" />
+                              <circle cx="27.5579" cy="19.0644" r="2.71438" fill="#F4F2F0" stroke="#848382"
+                                 stroke-width="0.7" />
+                           </svg>
+                        </div>
+                        <div class="services-process__text">
+                           <div class="services-process__subtitle h4">Выполняем работу и доставляем</div>
+                           <div class="services-process__description body">Мы делаем все работы и доставляем тщательно
+                              упакованное изделие, где Вы оплачиваете остаток 50% от стоимости заказа за выполненные
+                              работы.</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="form services-form">
+            <div class="container">
+               <div class="form__wrapper">
+                  <div class="form__images">
+                     <div class="form__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="185" height="72" viewBox="0 0 185 72"
+                           fill="none">
+                           <path
+                              d="M16.2461 30.6976L8.39199 28.4722C6.92181 28.0557 5.38399 28.869 4.90077 30.3186L1.94414 39.1885C1.42947 40.7325 2.30586 42.394 3.87075 42.8412L34.3508 51.5497H35.7801M16.2461 30.6976L33.9687 35.719C34.2222 35.7908 34.4844 35.8272 34.7479 35.8272H148.296C148.562 35.8272 148.826 35.7902 149.081 35.7172L167.754 30.3822M16.2461 30.6976C16.3904 24.3125 17.1383 10.8644 18.9906 3.88846C19.2964 2.73676 20.3706 2 21.5622 2H162.138C163.472 2 164.63 2.91869 164.899 4.22571C166.215 10.6344 168.091 22.144 167.754 30.3822M167.754 30.3822L175.975 28.0333C177.489 27.6009 179.067 28.4733 179.506 29.9849L182.203 39.2745C182.643 40.7911 181.77 42.3775 180.253 42.8171L150.126 51.5497H148.22M35.7801 51.5497L28.7327 67.8469C28.4606 68.476 28.9219 69.178 29.6073 69.178H30.3896C30.7697 69.178 31.1134 68.9522 31.2642 68.6033L38.6387 51.5497M35.7801 51.5497H38.6387M38.6387 51.5497H55.3141M55.3141 51.5497V68.2251C55.3141 68.7514 55.7408 69.178 56.267 69.178H57.2199C57.7462 69.178 58.1728 68.7514 58.1728 68.2251V51.5497M55.3141 51.5497H58.1728M58.1728 51.5497H144.885M144.885 51.5497L152.259 68.6033C152.41 68.9522 152.754 69.178 153.134 69.178H153.952C154.628 69.178 155.089 68.4936 154.835 67.8671L148.22 51.5497M144.885 51.5497H148.22M124.874 51.5497V68.2251C124.874 68.7514 125.301 69.178 125.827 69.178H126.78C127.306 69.178 127.733 68.7514 127.733 68.2251V51.5497H124.874Z"
+                              stroke="black" stroke-opacity="0.15" />
+                        </svg>
+                     </div>
+                     <div class="form__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="244" height="72" viewBox="0 0 244 72"
+                           fill="none">
+                           <path
+                              d="M213.009 69H223.324C224.981 69 226.324 67.6569 226.324 66V49.5837C226.324 45.0905 227.791 37.085 239.323 32.5262C239.862 32.3128 240.375 32.0027 240.754 31.5635C247.757 23.4579 236.864 12.8885 228.884 16.3716C226.415 17.4495 223.946 18.481 221.715 20.1233M213.009 69H31.7273M213.009 69V54.1823M31.7273 69H20.9007C19.2439 69 17.9007 67.6569 17.9007 66V49.5837C17.9007 48.0508 17.6959 37.5252 4.58622 32.2112C-4.11942 27.1017 4.07413 11.2621 17.9007 16.3716C19.891 17.1071 21.6128 18.35 23.0981 19.9483M31.7273 69V54.1823M31.7273 54.1823V49.5837C31.7273 49.4166 31.7264 49.2463 31.7246 49.0727M31.7273 54.1823H91.1305M213.009 54.1823V49.5837C212.982 48.1544 212.98 46.7931 213.001 45.4961M213.009 54.1823H153.094M23.0981 19.9483C29.0471 14.8388 57.0249 4.31308 121.344 3.08679C185.664 1.86049 215.058 13.9335 221.715 20.1233M23.0981 19.9483C29.7204 27.0744 31.6441 41.2672 31.7246 49.0727M221.715 20.1233C217.618 23.1393 214.325 28.2154 213.31 39.4222C213.267 39.9026 213.228 40.3942 213.193 40.8975C213.093 42.3335 213.028 43.8639 213.001 45.4961M31.7246 49.0727L32.1078 42.9871C32.1869 41.7318 33.039 40.6538 34.2571 40.3404C44.8052 37.6264 67.3426 34.5891 88.9642 40.2951C90.2527 40.6352 91.1305 41.8132 91.1305 43.1458V54.1823M91.1305 54.1823H92.1547M92.1547 54.1823V43.187C92.1547 41.835 93.0565 40.6459 94.3718 40.3329C105.762 37.6227 129.468 34.5984 150.442 40.2839C151.718 40.6297 152.582 41.8015 152.582 43.1234V54.1823M92.1547 54.1823H152.582M152.582 54.1823H153.094M153.094 54.1823V43.0437C153.094 41.7602 153.901 40.6148 155.136 40.2661C164.649 37.5803 185.866 34.6596 210.449 40.242V40.242C211.68 40.5216 212.586 41.5625 212.718 42.8182L213.001 45.4961"
+                              stroke="black" stroke-opacity="0.15" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="form__row">
+                     <h2 class="form__title h2">
+                        <span>Перетяжка мягкой мебели</span>
+                        <span>в Москве и области</span>
+                     </h2>
+                     <div class="form__content">
+                        <p class="form__description paragraph">
+                           <span>Пригласите дизайнера бесплатно!</span>
+                           <span>
+                              Поможем с выбором материала и предложим варианты
+                              перетяжки обивки и реставрации мебели на месте.
+                           </span>
+                        </p>
+                        <form action="#" class="form__main form-main">
+                           <div class="form-main__header">
+                              <div class="form-main__input">
+                                 <input class="input" type="text" placeholder="Имя">
+                              </div>
+                              <div class="form-main__input">
+                                 <input id="servicesPhone" class="input" type="text" placeholder="+7 (999) 999-99-99">
+                              </div>
+                           </div>
+                           <div class="form-main__footer">
+                              <div class="form-main__btn">
+                                 <button type="button" class="btn btn_dark">Вызвать дизайнера</button>
+                              </div>
+                              <div class="form-main__policy caption">
+                                 Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://unpkg.com/imask"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

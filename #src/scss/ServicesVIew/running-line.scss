@@ -1,0 +1,123 @@
+// $duration: 10s;
+
+.running-line {
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      margin-left: 28px;
+      margin-right: 28px;
+
+      svg {}
+
+      span {
+         color: $blackTert;
+      }
+   }
+
+   @media(max-width: 992px) {
+      &__item {
+         margin-left: 20px;
+         margin-right: 20px;
+      }
+   }
+
+   @media(max-width: 650px) {
+
+      &__item {
+         gap: 6px;
+         margin-left: 12px;
+         margin-right: 12px;
+
+         svg {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+         }
+
+         span {
+            font-size: 10px;
+         }
+      }
+   }
+}
+
+
+
+.runeline {
+   overflow: hidden;
+   background-color: $grayQuart;
+   display: flex;
+   align-items: center;
+   border-radius: 8px;
+   // margin: 0 auto;
+}
+
+.marquee-0 {
+   --space: 0rem;
+   display: grid;
+   align-content: center;
+}
+
+.marquee {
+   --duration: 15s;
+   --gap: var(--space);
+   display: flex;
+   user-select: none;
+   position: relative;
+   max-width: 100vw;
+}
+
+.marquee:hover {
+   z-index: 99;
+}
+
+.marquee__group {
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   min-width: 100%;
+   animation: scroll var(--duration) linear infinite;
+   // gap: 56px;
+}
+
+.marquee:hover .marquee__group {
+   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .marquee__group {
+      animation-play-state: paused;
+   }
+}
+
+
+@media (max-width: 568px) {
+   .marquee__group a {
+      font-size: 14px;
+      padding: 4px 15px;
+      border-radius: 13px
+   }
+}
+
+.marquee__group a:hover {
+   background: #B8FF65;
+   color: #282828;
+}
+
+.marquee__group span {
+   margin: 7px;
+}
+
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+
+   100% {
+      transform: translateX(calc(-100% - var(--gap)));
+   }
+}

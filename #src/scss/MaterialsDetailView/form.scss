@@ -1,0 +1,83 @@
+.material-form {
+   .form {
+      &__wrapper {
+         min-height: 220px;
+      }
+
+      &__row {
+         height: 100%;
+      }
+
+      &__main {
+         height: 100%;
+         justify-content: space-between;
+         max-width: 451px;
+         gap: 40px;
+
+         p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -moz-box;
+            -moz-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            line-clamp: 4;
+            box-orient: vertical;
+            /* 22.4px */
+         }
+      }
+
+      &__image {
+         height: 50px;
+
+         svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+
+      @media(max-width: 992px) {
+         &__wrapper {
+            height: unset;
+         }
+
+         &__main {
+            max-width: unset;
+            gap: 20px;
+
+            p {
+               max-width: 437px;
+            }
+         }
+
+         &__images {
+            top: 130px;
+         }
+      }
+
+      @media(max-width: 550px) {
+         &__title {
+            span {
+               white-space: unset;
+            }
+         }
+
+         &__main {
+            p {
+               overflow: hidden;
+               text-overflow: ellipsis;
+               display: -moz-box;
+               -moz-box-orient: vertical;
+               display: -webkit-box;
+               -webkit-line-clamp: unset;
+               -webkit-box-orient: vertical;
+               line-clamp: unset;
+               box-orient: vertical;
+               /* 22.4px */
+            }
+         }
+      }
+   }
+}

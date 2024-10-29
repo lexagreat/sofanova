@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Материалы детальная",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="broadcrumbs">
+            <div class="container">
+               <ul class="broadcrumbs__list">
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Sofanova</a>
+                  </li>
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Материалы для обивки</a>
+                  </li>
+                  <li class="broadcrumbs__item">
+                     <a href="#" class="broadcrumbs__link">Рогожка «Apollo» </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="material-hero section">
+            <div class="container">
+               <div class="material-hero__wrapper">
+                  <div class="material-hero__main">
+                     <h1 class="material-hero__title h2">Рогожка «Apollo»</h1>
+                     <a href="#" class="material-hero__link btn btn_light">Заказать образцы</a>
+                  </div>
+                  <div class="material-hero__info">
+                     <ul class="material-hero__tabs">
+                        <li class="material-hero__tab">
+                           <input checked type="radio" name="materialInfo" value="description" id="materialInfo1">
+                           <label for="materialInfo1" class="text14">
+                              Описание
+                           </label>
+                        </li>
+                        <li class="material-hero__tab">
+                           <input type="radio" name="materialInfo" value="params" id="materialInfo2">
+                           <label for="materialInfo2" class="text14">
+                              Характеристики
+                           </label>
+                        </li>
+                     </ul>
+                     <div class="material-hero__content">
+                        <div class="material-hero__item active material-hero__description" data-tab="description">
+                           <p>
+                              Рогожка Apollo с геометрическим переплетением актуальна и востребована. Нейтральный дизайн
+                              делает коллекцию универсальной благодаря чему она прекрасно подходит для мебели различных
+                              стилей. Объемное переплетение передает динамику, а обширная гамма актуальных оттенков
+                              позволяет реализовать самые смелые дизайнерские задумки. Высокая прочность и надежность
+                              ткани подтверждена тестом Мартиндейла.
+                           </p>
+                           <a href="#">Читать все</a>
+                        </div>
+                        <div class="material-hero__item material-hero__params" data-tab="params">
+                           <ul>
+                              <li class="body">
+                                 <span>Производитель</span>
+                                 <span>Китай</span>
+                              </li>
+                              <li class="body">
+                                 <span>Ширина ткани</span>
+                                 <span>140 см</span>
+                              </li>
+                              <li class="body">
+                                 <span>Состав</span>
+                                 <span>полиэстер (PES) 100%</span>
+                              </li>
+                              <li class="body">
+                                 <span>Циклы на истирание</span>
+                                 <span>более 60 000 циклов</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- <section class="material-slider section">
+            <div class="swiper material-slider__swiper">
+               <div class="swiper-wrapper">
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="1">
+                     <img src="img/materials-detail/slide1.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="2">
+                     <img src="img/materials-detail/slide2.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="3">
+                     <img src="img/materials-detail/slide3.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="4">
+                     <img src="img/materials-detail/slide4.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="5">
+                     <img src="img/materials-detail/slide5.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="6">
+                     <img src="img/materials-detail/slide6.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="7">
+                     <img src="img/materials-detail/slide7.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="8">
+                     <img src="img/materials-detail/slide8.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="9">
+                     <img src="img/materials-detail/slide9.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="10">
+                     <img src="img/materials-detail/slide10.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="11">
+                     <img src="img/materials-detail/slide11.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="12">
+                     <img src="img/materials-detail/slide12.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="13">
+                     <img src="img/materials-detail/slide13.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="14">
+                     <img src="img/materials-detail/slide14.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="15">
+                     <img src="img/materials-detail/slide15.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="16">
+                     <img src="img/materials-detail/slide16.jpg" alt="">
+                  </a>
+                  <a href="#modal" class="swiper-slide material-slider__slide modal__link" data-slide="17">
+                     <img src="img/materials-detail/slide17.jpg" alt="">
+                  </a>
+               </div>
+               <div class="material-slider__btns">
+                  <div class="swiper-button-prev material-slider__btn material-slider__btn_prev">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                        <path d="M7 1L1 7L7 13" stroke="black" stroke-opacity="0.85" stroke-width="1.03464" />
+                     </svg>
+                  </div>
+                  <div class="swiper-button-next material-slider__btn material-slider__btn_next">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                        <path d="M1 1L7 7L1 13" stroke="black" stroke-opacity="0.85" stroke-width="1.03464" />
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="material-slider__modal material-modal modal" id="modal">
+               <div class="material-modal__wrapper modal__content">
+                  <div class="swiper material-modal__swiper_thumbs">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide8.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide9.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide10.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide11.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide12.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide13.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide14.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide15.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide16.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide17.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper material-modal__swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide8.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide9.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide10.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide11.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide12.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide13.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide14.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide15.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide16.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/materials-detail/slide17.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <button class="material-modal__close modal__close">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M1.58594 12.4166L12.4193 1.58325L1.58594 12.4166Z" fill="#423C39" />
+                        <path d="M1.58594 12.4166L12.4193 1.58325" stroke="#423C39" stroke-width="1.35417"
+                           stroke-linecap="square" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M1.58594 1.58325L12.4193 12.4166L1.58594 1.58325Z" fill="#423C39" />
+                        <path d="M1.58594 1.58325L12.4193 12.4166" stroke="#423C39" stroke-width="1.35417"
+                           stroke-linecap="square" />
+                     </svg>
+                  </button>
+                  <div class="material-modal__btns">
+                     <div class="swiper-button-prev material-modal__btn material-modal__btn_prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                           <path d="M1 7L7 1L13 7" stroke="black" stroke-opacity="0.85" stroke-width="1.03464" />
+                        </svg>
+                     </div>
+                     <div class="swiper-button-prev material-modal__btn material-modal__btn_next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                           <path d="M1 1L7 7L13 1" stroke="black" stroke-opacity="0.85" stroke-width="1.03464" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+         <section class="portfolio-detail__form form material-form">
+            <div class="container">
+               <div class="form__wrapper">
+                  <div class="form__images">
+                     <div class="form__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="185" height="72" viewBox="0 0 185 72"
+                           fill="none">
+                           <path
+                              d="M16.2461 30.6976L8.39199 28.4722C6.92181 28.0557 5.38399 28.869 4.90077 30.3186L1.94414 39.1885C1.42947 40.7325 2.30586 42.394 3.87075 42.8412L34.3508 51.5497H35.7801M16.2461 30.6976L33.9687 35.719C34.2222 35.7908 34.4844 35.8272 34.7479 35.8272H148.296C148.562 35.8272 148.826 35.7902 149.081 35.7172L167.754 30.3822M16.2461 30.6976C16.3904 24.3125 17.1383 10.8644 18.9906 3.88846C19.2964 2.73676 20.3706 2 21.5622 2H162.138C163.472 2 164.63 2.91869 164.899 4.22571C166.215 10.6344 168.091 22.144 167.754 30.3822M167.754 30.3822L175.975 28.0333C177.489 27.6009 179.067 28.4733 179.506 29.9849L182.203 39.2745C182.643 40.7911 181.77 42.3775 180.253 42.8171L150.126 51.5497H148.22M35.7801 51.5497L28.7327 67.8469C28.4606 68.476 28.9219 69.178 29.6073 69.178H30.3896C30.7697 69.178 31.1134 68.9522 31.2642 68.6033L38.6387 51.5497M35.7801 51.5497H38.6387M38.6387 51.5497H55.3141M55.3141 51.5497V68.2251C55.3141 68.7514 55.7408 69.178 56.267 69.178H57.2199C57.7462 69.178 58.1728 68.7514 58.1728 68.2251V51.5497M55.3141 51.5497H58.1728M58.1728 51.5497H144.885M144.885 51.5497L152.259 68.6033C152.41 68.9522 152.754 69.178 153.134 69.178H153.952C154.628 69.178 155.089 68.4936 154.835 67.8671L148.22 51.5497M144.885 51.5497H148.22M124.874 51.5497V68.2251C124.874 68.7514 125.301 69.178 125.827 69.178H126.78C127.306 69.178 127.733 68.7514 127.733 68.2251V51.5497H124.874Z"
+                              stroke="black" stroke-opacity="0.15" />
+                        </svg>
+                     </div>
+                     <div class="form__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="244" height="72" viewBox="0 0 244 72"
+                           fill="none">
+                           <path
+                              d="M213.009 69H223.324C224.981 69 226.324 67.6569 226.324 66V49.5837C226.324 45.0905 227.791 37.085 239.323 32.5262C239.862 32.3128 240.375 32.0027 240.754 31.5635C247.757 23.4579 236.864 12.8885 228.884 16.3716C226.415 17.4495 223.946 18.481 221.715 20.1233M213.009 69H31.7273M213.009 69V54.1823M31.7273 69H20.9007C19.2439 69 17.9007 67.6569 17.9007 66V49.5837C17.9007 48.0508 17.6959 37.5252 4.58622 32.2112C-4.11942 27.1017 4.07413 11.2621 17.9007 16.3716C19.891 17.1071 21.6128 18.35 23.0981 19.9483M31.7273 69V54.1823M31.7273 54.1823V49.5837C31.7273 49.4166 31.7264 49.2463 31.7246 49.0727M31.7273 54.1823H91.1305M213.009 54.1823V49.5837C212.982 48.1544 212.98 46.7931 213.001 45.4961M213.009 54.1823H153.094M23.0981 19.9483C29.0471 14.8388 57.0249 4.31308 121.344 3.08679C185.664 1.86049 215.058 13.9335 221.715 20.1233M23.0981 19.9483C29.7204 27.0744 31.6441 41.2672 31.7246 49.0727M221.715 20.1233C217.618 23.1393 214.325 28.2154 213.31 39.4222C213.267 39.9026 213.228 40.3942 213.193 40.8975C213.093 42.3335 213.028 43.8639 213.001 45.4961M31.7246 49.0727L32.1078 42.9871C32.1869 41.7318 33.039 40.6538 34.2571 40.3404C44.8052 37.6264 67.3426 34.5891 88.9642 40.2951C90.2527 40.6352 91.1305 41.8132 91.1305 43.1458V54.1823M91.1305 54.1823H92.1547M92.1547 54.1823V43.187C92.1547 41.835 93.0565 40.6459 94.3718 40.3329C105.762 37.6227 129.468 34.5984 150.442 40.2839C151.718 40.6297 152.582 41.8015 152.582 43.1234V54.1823M92.1547 54.1823H152.582M152.582 54.1823H153.094M153.094 54.1823V43.0437C153.094 41.7602 153.901 40.6148 155.136 40.2661C164.649 37.5803 185.866 34.6596 210.449 40.242V40.242C211.68 40.5216 212.586 41.5625 212.718 42.8182L213.001 45.4961"
+                              stroke="black" stroke-opacity="0.15" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="form__row">
+                     <h2 class="form__title h2">
+                        <span>Выездная консультация </span>
+                        <span>профессионального дизайнера</span>
+                     </h2>
+                     <div class="form__content">
+                        <div class="form__main form-main">
+                           <p class="body">
+                              Пригласите дизайнера бесплатно! <br>
+                              Поможем с выбором материала и предложим варианты
+                              перетяжки
+                              обивки и реставрации мебели на месте.
+                           </p>
+                           <div class="form-main__footer">
+                              <div class="form-main__btn">
+                                 <button type="button" class="btn btn_dark">Узнать стоимость</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

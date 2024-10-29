@@ -1,0 +1,100 @@
+@import "nullstyle";
+@import "fonts";
+@import "vars";
+@import "shared";
+@import "header";
+@import "footer";
+@import "form";
+@import "works";
+@import "my";
+@import "modal";
+@import "broadcrumbs";
+@import "material-card";
+@import "HomeView/hero";
+@import "HomeView/features";
+@import "HomeView/nav";
+@import "HomeView/price";
+@import "HomeView/sofa-animate";
+@import "HomeView/production";
+@import "HomeView/calc";
+@import "HomeView/materials";
+@import "HomeView/reviews";
+@import "HomeView/trust";
+@import "HomeView/faq";
+@import "HomeView/articles";
+@import "ServicesView/running-line";
+@import "ServicesView/hero";
+@import "ServicesView/services";
+@import "ServicesView/banner";
+@import "ServicesView/process";
+@import "ServicesView/form";
+@import "ServiceView/hero";
+@import "ServiceView/actions";
+@import "ServiceView/repair";
+@import "ServiceView/materials";
+@import "ServiceView/form";
+@import "PortfolioView/hero";
+@import "PortfolioView/content";
+@import "PortfolioDetailView/shared";
+@import "PortfolioDetailView/new";
+@import "MaterialsView/shared";
+@import "MaterialsView/content";
+@import "MaterialsDetailView/hero";
+@import "MaterialsDetailView/slider";
+@import "MaterialsDetailView/form";
+@import "TypeView/hero";
+@import "TypeView/info";
+@import "CalculatorView/main";
+@import "ContactsView/contacts";
+@import "DeliveryView/delivery";
+@import "TrendsView/trends";
+@import "ArticlesView/articles";
+@import "ArticlesDetailView/article";
+@import "AboutView/hero";
+@import "AboutView/alternate";
+@import "AboutView/advantages";
+@import "AboutView/info";
+@import "AboutView/team";
+@import "AboutView/form";
+@import "StatusView/status";
+@import "ReviewsView/reviews";
+@import "SalesView/sales";
+@import "tranks";
+
+.wrapper {
+   font-family: $fontMain;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main {
+   padding-top: 80px;
+   flex: 1;
+
+   &.active {
+      margin-top: 4px;
+   }
+
+   @media(max-width:992px) {
+      padding-top: 72px;
+   }
+
+   @media(max-width: 650px) {
+      padding-top: 62px;
+   }
+}
+
+.container {
+   max-width: 1440px;
+   padding: 0 24px;
+   margin: 0 auto;
+
+   @media(max-width: 992px) {
+      padding: 0 16px;
+   }
+
+   @media(max-width: 650px) {
+      padding: 0 12px;
+   }
+}
